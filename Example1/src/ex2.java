@@ -12,9 +12,10 @@ public class ex2 {
 class abc{
 		public void name(String aa) {
 			String result = this.def(aa);
+			System.out.println(result);
 		}
 		public String def(String names) {
-			String msg = names + "환영합니다.";
+			String msg = names + " 환영합니다.";
 			return msg;
 		}
 }
