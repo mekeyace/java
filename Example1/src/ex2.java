@@ -11,7 +11,10 @@ public class ex2 {
 
 class abc{
 		public void name(String aa) {
-			System.out.println(aa);
+			String result = this.def(aa);
 		}
-
+		public String def(String names) {
+			String msg = names + "환영합니다.";
+			return msg;
+		}
 }
