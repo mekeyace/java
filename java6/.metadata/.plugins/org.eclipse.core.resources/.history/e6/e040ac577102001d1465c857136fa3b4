@@ -1,0 +1,27 @@
+public class Example1 {
+
+	public static void main(String[] args) {
+		String name1="홍길동";
+		String name2="이순신";
+		Example e = new B(name1);
+	//	bb.A();
+		Example e2 = new C(name2);
+	//	cc.A();
+	}
+}
+abstract class login{
+	 public abstract void A(String name);
+}
+class B implements Example{
+	@Override
+	public void A(String name1) {
+		System.out.println(name1+"님 환영합니다.");
+	}
+}
+class C implements Example {
+	@Override
+	public void A(String name2) {
+		System.out.println(name2+"님 주문하신 내역이 없습니다.");
+	}
+	
+}

@@ -1,0 +1,7 @@
+
+public interface Example {
+
+	String name1="홍길동";
+	String name2="이순신";
+	
+}

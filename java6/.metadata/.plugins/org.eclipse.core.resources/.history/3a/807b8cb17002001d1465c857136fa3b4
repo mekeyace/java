@@ -1,0 +1,32 @@
+public class Example1 {
+
+	public static void main(String[] args) {
+		String name1="홍길동";
+		String name2="이순신";
+		B bb = new B();
+		bb.A(name1);
+		C cc = new C();
+		cc.A(name2);
+	}
+}
+abstract class login{
+	 public abstract void A(String name);
+}
+class B implements Example{
+	String name1;
+	
+	@Override
+	public void A(String name1) {
+		this.name1=name1;
+		System.out.println(name+"님 환영합니다.");
+	}
+}
+class C implements Example {
+	String name2;
+	@Override
+	public void A(String name2) {
+		this.name2=name2;
+		System.out.println(name+"님 주문하신 내역이 없습니다.");
+	}
+	
+}

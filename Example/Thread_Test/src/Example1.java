@@ -1,0 +1,28 @@
+public class Example1 {
+
+	public static void main(String[] args) {
+		String name1="홍길동";
+		String name2="이순신";
+		Example ex1 = new B();
+		Example ex2 = new C();
+		ex1.A(name1);
+		ex2.A(name2);
+		//B b1 = new Example();
+		//bb.A();
+		//C c1 = new Example();
+		//cc.A();
+	}
+}
+class B implements Example{
+	@Override
+	public void A(String name1) {
+		System.out.println(name1+"님 환영합니다.");
+	}
+}
+class C implements Example {
+	@Override
+	public void A(String name2) {
+		System.out.println(name2+"님 주문하신 내역이 없습니다.");
+	}
+	
+}
